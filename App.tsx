@@ -6,6 +6,7 @@ import SectionHeader from './components/SectionHeader';
 import ServiceCard from './components/ServiceCard';
 import Gallery from './components/Gallery';
 import Industries from './components/Industries';
+import Clients from './components/Clients';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { CORE_SERVICES, ALLIED_SERVICES } from './constants';
@@ -90,6 +91,8 @@ const App: React.FC = () => {
       <div id="solutions" className="scroll-mt-20">
         <Industries />
       </div>
+
+      <Clients />
 
       {/* Asset Lifecycle Section */}
       <section id="lifecycle" className="py-32 bg-white scroll-mt-20">
