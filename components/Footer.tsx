@@ -9,8 +9,8 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
-              <img src="/logo-icon.png" alt="VR Technology Logo" className="h-8 w-auto object-contain" />
-              <span className="text-xl font-bold text-white tracking-tight">VR Technology</span>
+              <img src="/newlogo.jpeg" alt="VR Technology Logo" className="h-8 w-auto object-contain" />
+              <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-blue-400 via-cyan-400 to-orange-400 bg-clip-text text-transparent">VR Technology</span>
             </div>
             <p className="text-sm leading-relaxed text-slate-400">
               Your partner in sustainable thermal excellence. Providing "Single-Window" solutions for cooling technologies and industrial field services.
