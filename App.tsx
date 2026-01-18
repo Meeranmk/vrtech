@@ -8,6 +8,7 @@ import Gallery from './components/Gallery';
 import Industries from './components/Industries';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 import { CORE_SERVICES, ALLIED_SERVICES } from './constants';
 import { HardHat, Activity, Package, CheckCircle2, ChevronRight } from 'lucide-react';
 
@@ -198,6 +199,8 @@ const App: React.FC = () => {
       </div>
 
       <Footer />
+
+      <WhatsAppButton />
     </div>
   );
 };
