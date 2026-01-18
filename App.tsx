@@ -6,7 +6,6 @@ import SectionHeader from './components/SectionHeader';
 import ServiceCard from './components/ServiceCard';
 import Gallery from './components/Gallery';
 import Industries from './components/Industries';
-import Clients from './components/Clients';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { CORE_SERVICES, ALLIED_SERVICES } from './constants';
@@ -88,11 +87,10 @@ const App: React.FC = () => {
         </div>
       </section>
 
+
       <div id="solutions" className="scroll-mt-20">
         <Industries />
       </div>
-
-      <Clients />
 
       {/* Asset Lifecycle Section */}
       <section id="lifecycle" className="py-32 bg-white scroll-mt-20">
@@ -136,19 +134,19 @@ const App: React.FC = () => {
             <div className="lg:w-1/2 grid grid-cols-2 gap-4 sm:gap-8">
               <div className="space-y-4 sm:space-y-8">
                 <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl">
-                  <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=600" alt="Mechanical Work" className="w-full h-64 sm:h-80 object-cover" />
+                  <img src="/assets/Maintence/Final/Rotating Eq maintenance/IMG_20210417_155803.jpg" alt="Mechanical Work" className="w-full h-64 sm:h-80 object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                 </div>
                 <div className="relative rounded-[2.5rem] overflow-hidden shadow-xl">
-                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600" alt="Engineering" className="w-full h-40 sm:h-48 object-cover" />
+                  <img src="/assets/Final/Forced Draght Air Fin Cooler.jpg" alt="Engineering" className="w-full h-40 sm:h-48 object-cover" />
                 </div>
               </div>
               <div className="space-y-4 sm:space-y-8 pt-12 sm:pt-20">
                 <div className="relative rounded-[2.5rem] overflow-hidden shadow-xl">
-                  <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80&w=600" alt="Piping" className="w-full h-40 sm:h-48 object-cover" />
+                  <img src="/assets/Maintence/Final/Tube bundles/ACHE retubing 1.jpg" alt="Piping" className="w-full h-40 sm:h-48 object-cover" />
                 </div>
                 <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl">
-                  <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&q=80&w=600" alt="Industrial Facility" className="w-full h-64 sm:h-80 object-cover" />
+                  <img src="/assets/clients/Inspection & Testing/Final -Inspection/IMG_20210416_172140.jpg" alt="Industrial Facility" className="w-full h-64 sm:h-80 object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                 </div>
               </div>
@@ -172,12 +170,19 @@ const App: React.FC = () => {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {ALLIED_SERVICES.map((service, idx) => (
-              <div key={idx} className="bg-white/5 border border-white/10 backdrop-blur-sm p-8 sm:p-10 rounded-[2.5rem] hover:bg-white/10 transition-all group relative overflow-hidden">
-                <div className="bg-blue-600/20 text-blue-400 p-4 rounded-2xl w-fit mb-8 group-hover:bg-blue-500 group-hover:text-slate-900 transition-all">
-                  {service.icon}
+              <div key={idx} className="bg-white/5 border border-white/10 backdrop-blur-sm rounded-[2.5rem] hover:bg-white/10 transition-all group relative overflow-hidden">
+                <div className="relative h-48 overflow-hidden rounded-t-[2.5rem]">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
                 </div>
-                <h3 className="text-xl font-bold mb-4 tracking-tight">{service.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed mb-6">{service.desc}</p>
+                <div className="p-8 sm:p-10">
+                  <h3 className="text-xl font-bold mb-4 tracking-tight">{service.title}</h3>
+                  <p className="text-slate-400 text-sm leading-relaxed">{service.desc}</p>
+                </div>
               </div>
             ))}
           </div>

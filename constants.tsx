@@ -3,17 +3,13 @@ import React from 'react';
 import {
   Settings,
   Wind,
-  Droplets,
   Wrench,
   ShieldCheck,
   Cpu,
   Activity,
   Package,
-  Users,
-  Factory,
   CheckCircle2,
   HardHat,
-  Zap,
   Leaf
 } from 'lucide-react';
 import { NavItem, ServiceItem, GalleryItem } from './types';
@@ -30,7 +26,7 @@ export const NAV_LINKS: NavItem[] = [
 export const CORE_SERVICES: ServiceItem[] = [
   {
     title: 'Dry Cooling Solutions',
-    description: 'Specializing in ACHE, AFC, FFC, and ACC systems with high thermal performance and energy efficiency.',
+    description: 'Specializing in ACHE, AFC, FFC, ACC, and APH systems with high thermal performance and energy efficiency.',
     icon: <Wind className="w-8 h-8 text-blue-500" />,
     tags: ['Air Cooled Heat Exchanger', 'Air Fin Cooler', 'Fin Fan Cooler', 'Air Cooled Condenser', 'Air Pre Heaters']
   },
@@ -59,7 +55,7 @@ export const CORE_SERVICES: ServiceItem[] = [
     tags: ['NDT', 'ASNT Level II', 'Asset Integrity']
   },
   {
-    title: 'Spare Parts & Components Supply',
+    title: 'OEM Spares',
     description: 'Comprehensive supply of OEM and OEM-equivalent components ensuring system compatibility and long service life.',
     icon: <Package className="w-8 h-8 text-blue-500" />,
     tags: ['Tube Bundle Plugs & Gaskets', 'Fan Hubs, Blades & Accessories', 'V & Timing Pulleys', 'V & Timing Belts', 'Bearings', 'Louver Spares', 'Half-Tube Supports', 'Fin Components', 'Instruments', 'Fasteners']
@@ -67,12 +63,12 @@ export const CORE_SERVICES: ServiceItem[] = [
 ];
 
 export const INDUSTRIES = [
-  { name: 'Oil & Gas', image: 'https://picsum.photos/seed/oil/800/600' },
-  { name: 'Refinery', image: 'https://picsum.photos/seed/refinery/800/600' },
-  { name: 'Petrochemical', image: 'https://picsum.photos/seed/petro/800/600' },
-  { name: 'Steel Plants', image: 'https://picsum.photos/seed/steel/800/600' },
-  { name: 'Power Sector', image: 'https://picsum.photos/seed/power/800/600' },
-  { name: 'LNG Terminals', image: 'https://picsum.photos/seed/lng/800/600' },
+  { name: 'Oil & Gas', image: '/assets/Finals/oil and gas plat.jpg' },
+  { name: 'Refinery', image: '/assets/Finals/Refinery plant.jpg' },
+  { name: 'Petrochemical', image: '/assets/Finals/WP_000043.jpg' },
+  { name: 'Steel Plants', image: '/assets/Finals/steelplants.jpg' },
+  { name: 'Power Sector', image: '/assets/Finals/images (7).jpg' },
+  { name: 'LNG Terminals', image: '/assets/clients/PEB/Final/PEB Office.jpg' },
 ];
 
 export const GALLERY_ITEMS: GalleryItem[] = [
@@ -104,8 +100,8 @@ export const GALLERY_ITEMS: GalleryItem[] = [
 ];
 
 export const ALLIED_SERVICES = [
-  { title: 'Heavy Fabrication', desc: 'Expertise in fabrication of Bellow Expansion Joints (CS/SS), pressure parts, skid modules, and all types of equipment.', icon: <Factory className="w-6 h-6" /> },
-  { title: 'Structural Steel', desc: 'All kinds of steel structural works and PEB solutions for warehouses and factories with customized engineering. Expertise in all kinds of industrial shed sheeting works.', icon: <Zap className="w-6 h-6" /> },
-  { title: 'Piping Works', desc: 'All kinds of piping works, including high-pressure piping modifications and fire-fighting system installation.', icon: <Droplets className="w-6 h-6" /> },
-  { title: 'Technical Staffing & Manpower Supply', desc: 'Specialized supply of AFC/ACC field engineers, Supervisors, Fabricators, Millwrights, Structural fitters, and skilled Welders (TTS, TIG, MIG, SAW, and ARC), Grinders, Riggers and Helpers.', icon: <Users className="w-6 h-6" /> },
+  { title: 'Industrial Fabrications', desc: 'Expertise in fabrication of Bellow Expansion Joints (CS/SS), pressure parts, skid modules, and all types of equipment.', image: '/assets/Maintence/Final/IMG_20210417_110325.jpg' },
+  { title: 'Structural Steel', desc: 'All kinds of steel structural works and PEB solutions for warehouses and factories with customized engineering. Expertise in all kinds of industrial shed sheeting works.', image: '/assets/clients/PEB/Final/PEB Godown Structure.jpg' },
+  { title: 'Piping Works', desc: 'All kinds of piping works, including high-pressure piping modifications and fire-fighting system installation.', image: '/assets/Maintence/Final/Rotating Eq maintenance/IMG_20210503_132721.jpg' },
+  { title: 'Technical Staffing & Manpower Supply', desc: 'Specialized supply of AFC/ACC field engineers, Supervisors, Fabricators, Millwrights, Structural fitters, and skilled Welders (TTS, TIG, MIG, SAW, and ARC), Grinders, Riggers and Helpers.', image: '/assets/Maintence/Final/Tube bundles/ACHE TTS welding.jpg' },
 ];

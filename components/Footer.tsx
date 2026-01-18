@@ -10,7 +10,10 @@ const Footer: React.FC = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
               <img src="/newlogo.jpeg" alt="VR Technology Logo" className="h-8 w-auto object-contain" />
-              <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-blue-400 via-cyan-400 to-orange-400 bg-clip-text text-transparent">VR Technology</span>
+              <div className="flex flex-col">
+                <span className="text-xl font-bold tracking-tight text-blue-500">VR Technology</span>
+                <span className="text-xs text-slate-400 tracking-wide mt-0.5">Industrial Supply & Field Services</span>
+              </div>
             </div>
             <p className="text-sm leading-relaxed text-slate-400">
               Your partner in sustainable thermal excellence. Providing "Single-Window" solutions for cooling technologies and industrial field services.
