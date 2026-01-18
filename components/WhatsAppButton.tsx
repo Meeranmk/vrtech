@@ -6,7 +6,7 @@ const WhatsAppButton: React.FC = () => {
 
     // Replace with your actual WhatsApp number (include country code without + or spaces)
     // Example: For +91 9876543210, use: 919876543210
-    const phoneNumber = '919876543210'; // Update this with your actual number
+    const phoneNumber = '919952934312'; // VR Technology WhatsApp number
     const message = 'Hello! I would like to inquire about your services.';
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

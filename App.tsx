@@ -134,20 +134,20 @@ const App: React.FC = () => {
             </div>
             <div className="lg:w-1/2 grid grid-cols-2 gap-4 sm:gap-8">
               <div className="space-y-4 sm:space-y-8">
-                <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl">
-                  <img src="/assets/Maintence/Final/Rotating Eq maintenance/IMG_20210417_155803.jpg" alt="Mechanical Work" className="w-full h-64 sm:h-80 object-cover" />
+                <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl bg-slate-100">
+                  <img src="/assets/stragy/strag1.jpeg" alt="Mechanical Work" className="w-full h-64 sm:h-80 object-contain" />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                 </div>
-                <div className="relative rounded-[2.5rem] overflow-hidden shadow-xl">
-                  <img src="/assets/Final/Forced Draght Air Fin Cooler.jpg" alt="Engineering" className="w-full h-40 sm:h-48 object-cover" />
+                <div className="relative rounded-[2.5rem] overflow-hidden shadow-xl bg-slate-100">
+                  <img src="/assets/stragy/strag2.jpeg" alt="Engineering" className="w-full h-40 sm:h-48 object-contain" />
                 </div>
               </div>
               <div className="space-y-4 sm:space-y-8 pt-12 sm:pt-20">
-                <div className="relative rounded-[2.5rem] overflow-hidden shadow-xl">
-                  <img src="/assets/Maintence/Final/Tube bundles/ACHE retubing 1.jpg" alt="Piping" className="w-full h-40 sm:h-48 object-cover" />
+                <div className="relative rounded-[2.5rem] overflow-hidden shadow-xl bg-slate-100">
+                  <img src="/assets/stragy/strag3.jpeg" alt="Piping" className="w-full h-40 sm:h-48 object-contain" />
                 </div>
-                <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl">
-                  <img src="/assets/clients/Inspection & Testing/Final -Inspection/IMG_20210416_172140.jpg" alt="Industrial Facility" className="w-full h-64 sm:h-80 object-cover" />
+                <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl bg-slate-100">
+                  <img src="/assets/stragy/starg4.jpeg" alt="Industrial Facility" className="w-full h-64 sm:h-80 object-contain" />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
                 </div>
               </div>

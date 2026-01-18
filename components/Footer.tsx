@@ -48,16 +48,31 @@ const Footer: React.FC = () => {
             <h4 className="text-white font-bold mb-6">Contact Details</h4>
             <ul className="space-y-4 text-sm">
               <li className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                <span>Pan-India Service Reach<br />24/7 Operations</span>
+                <MapPin className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-white mb-1">Registered Address:</p>
+                  <p>D.No.5/205, Newtown,<br />
+                    Podanur, Coimbatore - 641023,<br />
+                    Tamil Nadu, India.</p>
+                </div>
               </li>
-              <li className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                <a href="mailto:services@vrtechnology.in" className="hover:text-white">services@vrtechnology.in</a>
+              <li className="flex items-start space-x-3">
+                <Phone className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                <div>
+                  <a href="tel:+919952934312" className="hover:text-white block">+91 9952934312</a>
+                  <a href="tel:+919500062047" className="hover:text-white block">+91 9500062047</a>
+                </div>
               </li>
-              <li className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-blue-500 flex-shrink-0" />
-                <span>Request a callback</span>
+              <li className="flex items-start space-x-3">
+                <Mail className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                <div>
+                  <a href="mailto:sales@vrtechnology.in" className="hover:text-white block">sales@vrtechnology.in</a>
+                  <a href="mailto:info@vrtechnology.in" className="hover:text-white block">info@vrtechnology.in</a>
+                  <a href="mailto:quality@vrtechnology.in" className="hover:text-white block">quality@vrtechnology.in</a>
+                </div>
+              </li>
+              <li className="text-xs text-slate-500 pt-2">
+                <span className="font-semibold">GST NO:</span> 33CFJPS3737Q1ZO
               </li>
             </ul>
           </div>

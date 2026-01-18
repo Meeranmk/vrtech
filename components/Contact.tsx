@@ -123,14 +123,47 @@ const Contact: React.FC = () => {
             />
 
             <div className="space-y-8 mt-12">
-              <div className="flex items-center space-x-4 p-6 bg-white rounded-3xl shadow-sm border border-slate-100 group hover:border-blue-200 transition-colors">
-                <div className="p-4 bg-blue-100 rounded-2xl text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all">
+              {/* Phone Numbers */}
+              <div className="flex items-start space-x-4 p-6 bg-white rounded-3xl shadow-sm border border-slate-100 group hover:border-blue-200 transition-colors">
+                <div className="p-4 bg-blue-100 rounded-2xl text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all flex-shrink-0">
                   <PhoneCall className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-black text-slate-900 uppercase text-sm tracking-widest">Direct Support</h4>
-                  <p className="text-slate-600 text-sm mt-1">Operating 24/7, 365 Days a year for critical shutdowns.</p>
+                  <h4 className="font-black text-slate-900 uppercase text-sm tracking-widest mb-2">Call Us</h4>
+                  <p className="text-slate-600 text-sm mb-2">24/7 Support for Critical Operations</p>
+                  <div className="space-y-1">
+                    <a href="tel:+919952934312" className="block text-blue-600 hover:text-blue-700 font-semibold">+91 9952934312</a>
+                    <a href="tel:+919500062047" className="block text-blue-600 hover:text-blue-700 font-semibold">+91 9500062047</a>
+                  </div>
                 </div>
+              </div>
+
+              {/* Email Addresses */}
+              <div className="flex items-start space-x-4 p-6 bg-white rounded-3xl shadow-sm border border-slate-100 group hover:border-blue-200 transition-colors">
+                <div className="p-4 bg-blue-100 rounded-2xl text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all flex-shrink-0">
+                  <Send className="w-6 h-6" />
+                </div>
+                <div>
+                  <h4 className="font-black text-slate-900 uppercase text-sm tracking-widest mb-2">Email Us</h4>
+                  <div className="space-y-1 text-sm">
+                    <a href="mailto:sales@vrtechnology.in" className="block text-blue-600 hover:text-blue-700">sales@vrtechnology.in</a>
+                    <a href="mailto:info@vrtechnology.in" className="block text-blue-600 hover:text-blue-700">info@vrtechnology.in</a>
+                    <a href="mailto:quality@vrtechnology.in" className="block text-blue-600 hover:text-blue-700">quality@vrtechnology.in</a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Address */}
+              <div className="p-6 bg-white rounded-3xl shadow-sm border border-slate-100">
+                <h4 className="font-black text-slate-900 uppercase text-sm tracking-widest mb-3">Registered Address</h4>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  D.No.5/205, Newtown,<br />
+                  Podanur, Coimbatore - 641023,<br />
+                  Tamil Nadu, India.
+                </p>
+                <p className="text-xs text-slate-500 mt-3 pt-3 border-t border-slate-100">
+                  <span className="font-semibold">GST NO:</span> 33CFJPS3737Q1ZO
+                </p>
               </div>
 
               <div className="p-10 bg-slate-950 rounded-[2.5rem] text-white shadow-2xl shadow-slate-900/40 relative overflow-hidden">

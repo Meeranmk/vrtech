@@ -103,5 +103,5 @@ export const ALLIED_SERVICES = [
   { title: 'Industrial Fabrications', desc: 'Expertise in fabrication of Bellow Expansion Joints (CS/SS), pressure parts, skid modules, and all types of equipment.', image: '/assets/Maintence/Final/IMG_20210417_110325.jpg' },
   { title: 'Structural Steel', desc: 'All kinds of steel structural works and PEB solutions for warehouses and factories with customized engineering. Expertise in all kinds of industrial shed sheeting works.', image: '/assets/clients/PEB/Final/PEB Godown Structure.jpg' },
   { title: 'Piping Works', desc: 'All kinds of piping works, including high-pressure piping modifications and fire-fighting system installation.', image: '/assets/Maintence/Final/Rotating Eq maintenance/IMG_20210503_132721.jpg' },
-  { title: 'Technical Staffing & Manpower Supply', desc: 'Specialized supply of AFC/ACC field engineers, Supervisors, Fabricators, Millwrights, Structural fitters, and skilled Welders (TTS, TIG, MIG, SAW, and ARC), Grinders, Riggers and Helpers.', image: '/assets/Maintence/Final/Tube bundles/ACHE TTS welding.jpg' },
+  { title: 'Technical Staffing & Manpower Supply', desc: 'Specialized supply of AFC/ACC field engineers, Supervisors, Fabricators, Millwrights, Structural fitters, and skilled Welders (TTS, TIG, MIG, SAW, and ARC), Grinders, Riggers and Helpers.', image: '/assets/Finals/staff.jpeg' },
 ];
