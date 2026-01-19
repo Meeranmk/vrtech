@@ -48,17 +48,17 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'bg-slate-950/98 backdrop-blur-md shadow-2xl' : 'bg-transparent'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'bg-white shadow-xl' : 'bg-white/95 backdrop-blur-sm shadow-md'}`}>
       {/* Top Header Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 md:py-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <div className="flex items-center space-x-3">
-              <img src="/newlogo.jpeg" alt="VR Technology Logo" className="h-10 md:h-12 w-auto object-contain group-hover:scale-110 transition-transform duration-300" />
+            <div className="flex items-center space-x-4">
+              <img src="/newlogo.jpeg" alt="VR Technology Logo" className="h-14 md:h-16 w-auto object-contain group-hover:scale-110 transition-transform duration-300" />
               <div className="flex flex-col">
-                <span className="text-xl md:text-2xl font-black tracking-tight leading-none uppercase text-blue-500">VR Technology</span>
-                <span className="text-[10px] md:text-xs text-slate-400 tracking-wide mt-0.5">Industrial Supply & Field Services</span>
+                <span className="text-2xl md:text-3xl font-black tracking-tight leading-none uppercase text-blue-500">VR Technology</span>
+                <span className="text-xs md:text-sm text-slate-400 tracking-wide mt-1">Industrial Supply & Field Services</span>
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
                 key={link.label}
                 href={link.href}
                 onClick={(e) => handleLinkClick(e, link.href)}
-                className={`px-4 py-2 text-sm font-bold transition-all rounded-lg hover:bg-white/5 tracking-tight ${activeSection === link.href.replace('#', '') ? 'text-blue-400 bg-white/5' : 'text-slate-300 hover:text-white'}`}
+                className={`px-4 py-2 text-sm font-bold transition-all rounded-lg hover:bg-slate-100 tracking-tight ${activeSection === link.href.replace('#', '') ? 'text-blue-600 bg-slate-100' : 'text-slate-700 hover:text-slate-900'}`}
               >
                 {link.label}
               </a>
@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile Horizontal Scroll Menu (The "No-Hamburger" Solution) */}
-      <div className="md:hidden border-t border-white/5 bg-slate-950/50">
+      <div className="md:hidden border-t border-slate-200 bg-slate-50">
         <div className="overflow-x-auto no-scrollbar py-2 px-4">
           <div className="flex space-x-2 whitespace-nowrap min-w-max">
             {NAV_LINKS.map((link) => (
@@ -110,7 +110,7 @@ const Navbar: React.FC = () => {
                 onClick={(e) => handleLinkClick(e, link.href)}
                 className={`px-4 py-2 text-[10px] font-black uppercase tracking-widest rounded-full transition-all border ${activeSection === link.href.replace('#', '')
                   ? 'bg-blue-600 text-white border-blue-600'
-                  : 'bg-white/5 text-slate-400 border-white/10'
+                  : 'bg-white text-slate-700 border-slate-200'
                   }`}
               >
                 {link.label}

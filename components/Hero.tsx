@@ -26,15 +26,8 @@ const Hero: React.FC = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-32 pb-32 overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&q=80&w=2070"
-          alt="Industrial Facility"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-slate-950/85 backdrop-blur-[2px]"></div>
-      </div>
+      {/* Background - Grey and White Theme */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-slate-100 via-white to-slate-200"></div>
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -44,14 +37,14 @@ const Hero: React.FC = () => {
               <span className="w-2 h-2 rounded-full bg-blue-500"></span>
               <span className="uppercase">Engineering Excellence Since Inception</span>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-8 tracking-tighter">
-              Dry Cooling & <br /><span className="text-blue-500">Heat Exchange</span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-slate-900 leading-[1.05] mb-8 tracking-tighter">
+              Dry Cooling <br /><span className="text-blue-600">Heat Exchanger Services</span>
             </h1>
-            <p className="text-base sm:text-lg text-slate-300 mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
-              VR Technology delivers comprehensive ME&I services to the global energy sector.
+            <p className="text-base sm:text-lg text-slate-700 mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
+              VR Technology delivers comprehensive Mechanical and E&I Services to the global energy sector.
               We specialize in Air Cooled Heat Exchangers like Air Fin Coolers, Fin Fan Coolers,
               Air Cooled Condensers and Air Pre Heaters systems lifecycle management with a
-              <span className="text-blue-400 font-bold italic"> "Right First Time"</span> approach.
+              <span className="text-blue-600 font-bold italic"> "Right First Time"</span> approach.
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center lg:justify-start gap-5 mb-12">

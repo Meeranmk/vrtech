@@ -61,6 +61,7 @@ const Footer: React.FC = () => {
                 <div>
                   <a href="tel:+919952934312" className="hover:text-white block">+91 9952934312</a>
                   <a href="tel:+919500062047" className="hover:text-white block">+91 9500062047</a>
+                  <a href="tel:+919840626724" className="hover:text-white block">+91 9840626724</a>
                 </div>
               </li>
               <li className="flex items-start space-x-3">
