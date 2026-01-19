@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
             <div className="flex items-center space-x-4">
               <img src="/newlogo.jpeg" alt="VR Technology Logo" className="h-14 md:h-16 w-auto object-contain group-hover:scale-110 transition-transform duration-300" />
               <div className="flex flex-col">
-                <span className="text-2xl md:text-3xl font-black tracking-tight leading-none uppercase text-blue-500">VR Technology</span>
+                <span className="text-2xl md:text-3xl font-black tracking-tight leading-none uppercase text-red-600">VR Technology</span>
                 <span className="text-xs md:text-sm text-slate-400 tracking-wide mt-1">Industrial Supply & Field Services</span>
               </div>
             </div>
@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
                 key={link.label}
                 href={link.href}
                 onClick={(e) => handleLinkClick(e, link.href)}
-                className={`px-4 py-2 text-sm font-bold transition-all rounded-lg hover:bg-slate-100 tracking-tight ${activeSection === link.href.replace('#', '') ? 'text-blue-600 bg-slate-100' : 'text-slate-700 hover:text-slate-900'}`}
+                className={`px-4 py-2 text-sm font-bold transition-all rounded-lg hover:bg-slate-100 tracking-tight ${activeSection === link.href.replace('#', '') ? 'text-red-600 bg-slate-100' : 'text-slate-700 hover:text-slate-900'}`}
               >
                 {link.label}
               </a>

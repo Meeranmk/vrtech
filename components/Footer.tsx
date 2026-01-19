@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
             <div className="flex items-center space-x-2">
               <img src="/newlogo.jpeg" alt="VR Technology Logo" className="h-8 w-auto object-contain" />
               <div className="flex flex-col">
-                <span className="text-xl font-bold tracking-tight text-blue-500">VR Technology</span>
+                <span className="text-xl font-bold tracking-tight text-red-600">VR Technology</span>
                 <span className="text-xs text-slate-400 tracking-wide mt-0.5">Industrial Supply & Field Services</span>
               </div>
             </div>
